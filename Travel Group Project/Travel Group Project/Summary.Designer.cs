@@ -31,13 +31,13 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panMountains = new System.Windows.Forms.Panel();
             this.panCoastal = new System.Windows.Forms.Panel();
             this.panUrban = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panMountains.SuspendLayout();
             this.panCoastal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOK
@@ -67,16 +67,10 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 207);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // panMountains
             // 
+            this.panMountains.BackgroundImage = global::Travel_Group_Project.Properties.Resources.urban;
+            this.panMountains.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panMountains.Controls.Add(this.panCoastal);
             this.panMountains.Location = new System.Drawing.Point(21, 21);
             this.panMountains.Name = "panMountains";
@@ -85,6 +79,8 @@
             // 
             // panCoastal
             // 
+            this.panCoastal.BackgroundImage = global::Travel_Group_Project.Properties.Resources.mountains;
+            this.panCoastal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panCoastal.Controls.Add(this.panUrban);
             this.panCoastal.Location = new System.Drawing.Point(16, 18);
             this.panCoastal.Name = "panCoastal";
@@ -93,10 +89,20 @@
             // 
             // panUrban
             // 
-            this.panUrban.Location = new System.Drawing.Point(23, 23);
+            this.panUrban.BackgroundImage = global::Travel_Group_Project.Properties.Resources.beach;
+            this.panUrban.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panUrban.Location = new System.Drawing.Point(18, 43);
             this.panUrban.Name = "panUrban";
             this.panUrban.Size = new System.Drawing.Size(200, 100);
             this.panUrban.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(259, 207);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // Summary
             // 
@@ -110,9 +116,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Summary";
             this.Text = "Summary";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panMountains.ResumeLayout(false);
             this.panCoastal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

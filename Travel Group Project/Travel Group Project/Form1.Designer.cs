@@ -1,6 +1,6 @@
 ﻿namespace Travel_Group_Project
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnAddAll = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -35,7 +36,6 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,51 +47,70 @@
             this.btnShowList = new System.Windows.Forms.Button();
             this.btnClearForm = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panCoastal.SuspendLayout();
             this.panUrban.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(189, 12);
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAdd.Location = new System.Drawing.Point(189, 31);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // btnAddAll
             // 
-            this.btnAddAll.Location = new System.Drawing.Point(189, 78);
+            this.btnAddAll.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnAddAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddAll.BackgroundImage")));
+            this.btnAddAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddAll.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAddAll.Location = new System.Drawing.Point(189, 60);
             this.btnAddAll.Name = "btnAddAll";
             this.btnAddAll.Size = new System.Drawing.Size(75, 23);
             this.btnAddAll.TabIndex = 1;
             this.btnAddAll.Text = "Add All";
-            this.btnAddAll.UseVisualStyleBackColor = true;
+            this.btnAddAll.UseVisualStyleBackColor = false;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(189, 152);
+            this.btnClear.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnClear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClear.BackgroundImage")));
+            this.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnClear.Location = new System.Drawing.Point(189, 133);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             // 
             // btnClearAll
             // 
-            this.btnClearAll.Location = new System.Drawing.Point(189, 227);
+            this.btnClearAll.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnClearAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClearAll.BackgroundImage")));
+            this.btnClearAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClearAll.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnClearAll.Location = new System.Drawing.Point(189, 162);
             this.btnClearAll.Name = "btnClearAll";
             this.btnClearAll.Size = new System.Drawing.Size(75, 23);
             this.btnClearAll.TabIndex = 3;
             this.btnClearAll.Text = "Clear All";
-            this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.UseVisualStyleBackColor = false;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Location = new System.Drawing.Point(24, 31);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(152, 238);
             this.listBox1.TabIndex = 4;
@@ -99,7 +118,7 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(297, 12);
+            this.listBox2.Location = new System.Drawing.Point(280, 31);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(153, 238);
             this.listBox2.TabIndex = 5;
@@ -115,14 +134,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(639, 448);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 
@@ -190,7 +202,10 @@
             // 
             // btnShowList
             // 
-            this.btnShowList.Location = new System.Drawing.Point(336, 256);
+            this.btnShowList.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowList.BackgroundImage")));
+            this.btnShowList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShowList.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnShowList.Location = new System.Drawing.Point(189, 246);
             this.btnShowList.Name = "btnShowList";
             this.btnShowList.Size = new System.Drawing.Size(75, 23);
             this.btnShowList.TabIndex = 15;
@@ -199,27 +214,55 @@
             // 
             // btnClearForm
             // 
-            this.btnClearForm.Location = new System.Drawing.Point(528, 38);
+            this.btnClearForm.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnClearForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClearForm.BackgroundImage")));
+            this.btnClearForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClearForm.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnClearForm.Location = new System.Drawing.Point(517, 133);
             this.btnClearForm.Name = "btnClearForm";
             this.btnClearForm.Size = new System.Drawing.Size(75, 23);
             this.btnClearForm.TabIndex = 16;
             this.btnClearForm.Text = "Clear Form";
-            this.btnClearForm.UseVisualStyleBackColor = true;
+            this.btnClearForm.UseVisualStyleBackColor = false;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(528, 78);
+            this.btnExit.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnExit.Location = new System.Drawing.Point(517, 162);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 17;
             this.btnExit.Text = "E&xit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(467, 31);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(166, 80);
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(639, 281);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 472);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClearForm);
             this.Controls.Add(this.btnShowList);
@@ -237,11 +280,13 @@
             this.Controls.Add(this.btnAddAll);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmMain";
+            this.Text = "Travel Packing Helper";
             this.panCoastal.ResumeLayout(false);
             this.panUrban.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,6 +313,7 @@
         private System.Windows.Forms.Button btnShowList;
         private System.Windows.Forms.Button btnClearForm;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
