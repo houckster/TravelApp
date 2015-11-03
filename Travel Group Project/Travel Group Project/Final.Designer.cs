@@ -1,6 +1,6 @@
 ﻿namespace Travel_Group_Project
 {
-    partial class Final
+    partial class frmFinal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lsbFinalReport = new System.Windows.Forms.ListBox();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnRestart = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lsbFinalReport
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(0, 0);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(272, 186);
-            this.listBox1.TabIndex = 0;
+            this.lsbFinalReport.FormattingEnabled = true;
+            this.lsbFinalReport.Location = new System.Drawing.Point(0, 0);
+            this.lsbFinalReport.Name = "lsbFinalReport";
+            this.lsbFinalReport.Size = new System.Drawing.Size(272, 186);
+            this.lsbFinalReport.TabIndex = 0;
             // 
             // btnPrint
             // 
@@ -48,7 +48,7 @@
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 23);
             this.btnPrint.TabIndex = 1;
-            this.btnPrint.Text = "Print";
+            this.btnPrint.Text = "&Print";
             this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // btnRestart
@@ -57,7 +57,7 @@
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(75, 23);
             this.btnRestart.TabIndex = 2;
-            this.btnRestart.Text = "Restart";
+            this.btnRestart.Text = "&Restart";
             this.btnRestart.UseVisualStyleBackColor = true;
             // 
             // btnExit
@@ -69,7 +69,7 @@
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
-            // Final
+            // frmFinal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -77,16 +77,17 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.btnPrint);
-            this.Controls.Add(this.listBox1);
-            this.Name = "Final";
+            this.Controls.Add(this.lsbFinalReport);
+            this.Name = "frmFinal";
             this.Text = "Final";
+            this.Load += new System.EventHandler(this.frmFinal_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lsbFinalReport;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Button btnExit;
